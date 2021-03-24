@@ -1,0 +1,12 @@
+body
+{
+    font-style: italic;
+	background-color: #FFFAF0;
+	 font-size: 17pt
+} 
+#info { float: none; display: block; text-align: center; }
+#photo {
+        float: none;
+        display: block;
+        text-align: center;
+}
