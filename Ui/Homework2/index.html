@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Решение квадратного уравнения</title>
+		<div align="center">
+		<b>Решение квадратного уравнения a&middot;x&sup2; + b&middot;x + c = 0.</b>
+		</div>
+		</head>
+		<body>
+		<script src="discriminant.js"></script>
+		<form action="" id="add_persons" method="post" onsubmit="addRow();return false;">
+		<fieldset>
+			<legend>Укажите коэффициенты</legend>
+				<ul>
+					<li>
+						<label for="name">A</label>
+						<input type="text" name="A" id="name_A" value="" size="12" tabindex="1" />
+					</li>
+					<li>
+						<label for="name">B</label>
+						<input type="text" name="B" id="name_B" value="" size="12" tabindex="2" />
+					</li>
+					<li>
+						<label for="name">C</label>
+						<input type="text" name="C" id="name_C" value="" size="12" tabindex="3" />
+					</li>
+					<li>
+						<label for="subm">Действия</label>
+						<input onclick='readingValue();' type='button' value='Вычислить'>
+						 <label for="name">Проверка исходных данных</label>
+						<input type="text" value="" id="myInput" value="" size="40" tabindex="7" />
+						<input onclick='clrValue();' type='button' value='Очистить поля'>
+					</li>
+				</ul>
+					<table <table id="tab1" class="sortable">
+						<thead>
+							<tr>
+								<th class ="row">X1</th>
+								<th class ="row">X2</th>
+								<th class ="row">Дискриминант</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+		</fieldset>
+	</form>
+		</body>
+</html>
